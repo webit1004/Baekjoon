@@ -10,7 +10,9 @@ public class No10818 {
 	public static void main(String[] args){
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		try {
+			// 입력받을 숫자 개수
 			int n = Integer.parseInt(br.readLine());
+			// 숫자들 input
 			StringTokenizer st = 
 					new StringTokenizer(br.readLine(), " ");
 			
