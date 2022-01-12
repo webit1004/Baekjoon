@@ -13,14 +13,16 @@ public class No2588 {
 		arr[1] = Integer.parseInt(br.readLine()); // 385 
 		int b = arr[1];
 		int[] numArr = new int[3];
+		br.close();
 		
-		for(int i = 0; i < 3; i++) {
-			numArr[i] = b%10;
-			b/=10;
-			System.out.println(b*numArr[i]);
+		for(int i = 0; i < numArr.length; i++) {
+			if(b != 0) {
+				numArr[i] = b%10; // 10으로 나눈 나머지
+				b/=10; // 10으로 나눈 값을 b에 저장
+			}
+			//앞에 else를 쓰면 실행안되는 이유?
+			System.out.println(arr[0]*numArr[i]); 
 		}
-		
 		System.out.println(arr[0]*arr[1]);
 	}
-
 }
